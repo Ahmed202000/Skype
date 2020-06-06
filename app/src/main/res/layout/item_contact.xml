@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:elevation="@dimen/_20sdp">
+
+
+    <RelativeLayout
+        android:id="@+id/item_contact_cart_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+        <ImageView
+            android:id="@+id/item_contact_img_find_people"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:src="@drawable/profile_image"
+            android:layout_marginTop="@dimen/_10sdp" />
+
+
+
+        <TextView
+            android:id="@+id/item_contact_tv_find_people"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:textStyle="bold"
+            android:text="hhbhjbjhbnj"
+            android:textSize="@dimen/_16sdp"
+            android:gravity="center"
+            android:layout_below="@+id/item_contact_img_find_people"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindPeople">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/activity_contacts_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/activity_contacts_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/activity_find_people_tv_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Search hear ..."
+                    android:textAlignment="center"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginStart="@dimen/_16sdp"
+                    android:drawableTint="@android:color/white"
+                    android:backgroundTint="@android:color/white"
+                    android:textColorHint="@android:color/white"
+                    android:drawableStart="@drawable/search"
+                    android:textColor="@android:color/white"
+                    android:layout_centerVertical="true"
+                    android:inputType="text"/>
+
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activity_find_people_rv_find_people_list"
+        android:layout_below="@+id/activity_contacts_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+</RelativeLayout>

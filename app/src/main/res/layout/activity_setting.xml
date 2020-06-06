@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setting"
+    android:background="@drawable/back">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_above="@+id/username_settings"
+        android:layout_marginTop="@dimen/_20sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/settings_profile_image"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/profile_image" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <EditText
+        android:id="@+id/username_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/edit_profile"
+        android:backgroundTint="@android:color/white"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:src="@drawable/profile_image"
+        android:inputType="text"
+        android:drawableTint="@android:color/white"
+        android:hint="Write your name"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"/>
+
+
+    <EditText
+        android:id="@+id/bio_settings"
+        android:layout_below="@+id/username_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/edit_status"
+        android:backgroundTint="@android:color/white"
+        android:drawableTint="@android:color/white"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/profile_image"
+        android:hint="User Status"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"/>
+
+
+
+    <Button
+        android:id="@+id/save_settings_btn"
+        android:layout_below="@+id/bio_settings"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_marginEnd="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:src="@drawable/profile_image"
+        android:text="Save"
+        android:textColor="@android:color/black"/>
+
+
+</RelativeLayout>

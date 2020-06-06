@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CallingActivity">
+
+
+    <ImageView
+        android:id="@+id/profile_image_calling"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/profile_image"
+        android:scaleType="centerCrop"/>
+
+
+    <TextView
+        android:id="@+id/user_calling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textColor="@color/colorPrimary"
+        android:maxLines="5"
+        android:textStyle="bold"
+        android:textSize="@dimen/_25sdp"
+        android:gravity="center"
+        android:layout_above="@+id/text"/>
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calling..."
+        android:textColor="@color/colorAccent"
+        android:maxLines="5"
+        android:textStyle="bold"
+        android:textSize="@dimen/_16sdp"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_above="@+id/linear_layout1"/>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:gravity="center">
+
+
+
+        <ImageView
+            android:id="@+id/make_call"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/make_call"
+            android:layout_marginEnd="@dimen/_80sdp"
+            android:visibility="gone"/>
+
+
+        <ImageView
+            android:id="@+id/cancel_call"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:src="@drawable/cancel_call"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

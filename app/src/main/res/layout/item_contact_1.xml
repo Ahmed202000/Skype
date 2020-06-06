@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:elevation="@dimen/_20sdp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/item_contact_1_cart_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/item_contact_1_img_find_people"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:src="@drawable/profile_image"
+                android:layout_marginTop="@dimen/_10sdp" />
+
+
+
+            <TextView
+                android:id="@+id/item_contact_1_tv_find_people"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:textStyle="bold"
+                android:text="hhbhjbjhbnj"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_14sdp"
+                android:layout_toEndOf="@+id/item_contact_1_img_find_people"/>
+
+        </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout android:id="@+id/item_contact_1_rl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+                android:gravity="center"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_below="@+id/item_contact_1_cart_view">
+
+
+
+            <ImageView
+                android:id="@+id/item_contact_1_btn_call_video"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:text="Accept Friend Request"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:src="@drawable/video_call"
+                android:layout_gravity="center"
+                android:layout_centerVertical="true"
+                 android:tint="@android:color/holo_red_dark"/>
+
+
+
+                <ImageView
+                    android:id="@+id/item_contact_1_btn_call"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:text="Accept Friend Request"
+                    android:src="@drawable/make_call"
+                    android:layout_gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/item_contact_1_btn_call_video"/>
+
+
+
+
+
+            </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
